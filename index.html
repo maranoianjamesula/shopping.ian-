@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alligator | Slippers</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<nav class="icon-nav">
+  <input type="checkbox" id="menu-toggle" hidden>
+  <label for="menu-toggle" class="menu-toggle">
+    <i class="fa-solid fa-bars"></i>  
+  </label>
+  
+  <div class="menu">
+    <div class="menu_header">
+      <h2>Menu</h2>
+    </div>
+    <div class="menu_item">
+       <a href="index.html" style="color:black;">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+   </a>
+    </div>
+    <div class="menu_item">
+      <a href="shoppingcart.html" style="color:black;">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span>Cart</span>
+      </a>
+    </div>
+    <div class="menu_item">
+  <a href="Account.html" style="color:black;">
+      <i class="fa-solid fa-user"></i>
+      <span>Account</span>
+  </a>
+    </div>
+    <div class="menu_item">
+      <i class="fa-solid fa-circle-question"></i>
+      <span>Help</span>
+    </div>
+  </div>
+  <img src="logo.png" alt="Alli Logo" class="img">
+    <h1 style="float: left; font-size: 20px; color: #FFFFFF; margin-right: 600px;">Alléi</h1>
+<div class="search-bar-full">
+    <input type="text" id="searchInput" placeholder="Search your slippers..." onkeyup="searchProducts()">
+</div>
+
+    <a href="#" title="Home">
+        <i class="fa-solid fa-house"></i>
+    </a>
+    <a href="Products.html" title="Products">
+        <i class="fa-solid fa-shoe-prints"></i>
+    </a>
+    <a href="#about" title="About">
+        <i class="fa-solid fa-circle-info"></i>
+    </a>
+</nav>
+
+<header>
+    <h1>ALLÉI</h1>
+    <p>Strong. Stylish. Comfortable Slippers.</p>
+</header>
+  <div id="front-model">
+   <img src="front.png" alt="front-model">
+  </div>
+<section class="products" id="products">
+   
+  <h2>Trending Styles</h2>
+
+    <div class="product-grid">
+        <!-- PRODUCT 1 -->
+        <div class="card">
+            <img src="gatorclassic.png" alt="Slipper 1">
+            <div class="card-content">
+                <h3>Gator Classic</h3>
+                <p>Durable everyday slippers with all-day comfort.</p>
+                <button><a href="Products.html" onclick="buy()">Quick View</a></button>
+            </div>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="card">
+           <img src="swampflex.png" alt="Slipper 2">
+            <div class="card-content">
+                <h3>Swamp Flex</h3>
+                <p>Flexible sole with natural grip design.</p>
+                <button><a href="Products.html" onclick="buy()">Quick View</a></button>
+            </div>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="card">
+           <img src="riverwalk.png" alt="Slipper 3">
+            <div class="card-content">
+                <h3>River Walk</h3>
+                <p>Lightweight slippers for casual wear.</p>
+                <button><a href="Products.html" onclick="buy()">Quick View</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="hero">
+       <h2>Walk with the Strength of an Alligator 🝊</h2>
+       <p>Premium slippers inspired by nature, built for comfort and durability.</p>
+    </section>
+
+    <div class="carousel">
+       <img src="footie1.png" class="carousel-img" alt="Slipper 1">
+       <img src="footie2.png" class="carousel-img" alt="Slipper 2">
+       <img src="footie3.png" class="carousel-img" alt="Slipper 3">
+       <img src="footie4.png" class="carousel-img" alt="Slipper 3">
+    </div>
+
+<section class="about" id="about">
+    <h2>About Alléi</h2>
+    <p>
+        Alléi is a slipper brand inspired by the strength, grip, and resilience
+        of the alligator. Designed for comfort, built to last.
+        <br>Slippers are designed to give your feet comfort and ease every day. Made with soft, lightweight materials, they provide a cozy feel while keeping your feet relaxed at home or on quick errands. Their simple yet durable design makes them easy to wear and long-lasting. With a comfortable sole and snug fit, slippers are perfect for rest, movement, and everyday use. Practical, affordable, and comfy—slippers are a must-have for daily comfort.
+    </p>
+</section>
+
+<footer>
+    <div style="margin-bottom:10px;">
+    <a href="https://www.facebook.com/fence.alafriz/" style="color:#F5F3E7; margin:0 10px; font-size:20px;">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/fense.vl/" style="color:#F5F3E7; margin:0 10px; font-size:20px;">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://www.threads.com/@pcha_mary" style="color:#F5F3E7; margin:0 10px; font-size:20px;">
+        <i class="fa-brands fa-threads"></i>
+    </a>
+</div>
+
+    <p>© 2026 Alléi Slippers. All Rights Reserved.</p>
+</footer>
+
+<script>
+let currentIndex = 0;
+const slides = document.querySelectorAll('.carousel-img');
+
+function showSlide(index) {
+  slides.forEach((img, i) => {
+    img.classList.remove('active');
+    if(i === index) img.classList.add('active');
+  });
+}
+
+// initial display
+showSlide(currentIndex);
+
+// rotate every 5 seconds
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}, 5000); // 5000ms = 5 seconds
+
+</script>
+
+
+
+
+</body>
+</html>
