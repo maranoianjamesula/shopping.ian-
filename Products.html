@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alligator | Slippers</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<nav class="icon-nav">
+  <input type="checkbox" id="menu-toggle" hidden>
+  <label for="menu-toggle" class="menu-toggle">
+    <i class="fa-solid fa-bars"></i>  
+  </label>
+  
+  <div class="menu">
+    <div class="menu_header">
+      <h2>Menu</h2>
+    </div>
+    <div class="menu_item">
+ <a href= "index.html" style="color:black;">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+   </a>
+    </div>
+    <div class="menu_item">
+     <a href= "shoppingcart.html" style="color:black;">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span>Cart</span>
+     </a>
+    </div>
+    <div class="menu_item">
+      <a href= "Account.html" style="color:black;">
+      <i class="fa-solid fa-user"></i>
+      <span>Account</span>
+     </a>
+    </div>
+    <div class="menu_item">
+      <i class="fa-solid fa-circle-question"></i>
+      <span>Help</span>
+    </div>
+  </div>
+
+    <img src="logo.png" alt="Alli Logo" class="img">
+    <h1 style="float: left; font-size: 20px; color: #FFFFFF; margin-right: 550px;">ALLIGATOR</h1>
+<div class="search-bar-full">
+    <input type="text" id="searchInput" placeholder="Search your slippers..." onkeyup="searchProducts()">
+</div>
+
+    <a href="index.html" title="Home">
+        <i class="fa-solid fa-house"></i>
+    </a>
+    <a href="Products.html" title="Products">
+        <i class="fa-solid fa-shoe-prints"></i>
+    </a>
+    <a href="#about" href".about" title="About">
+        <i class="fa-solid fa-circle-info"></i>
+    </a>
+    <a href="shoppingcart.html" onclick="cart()" title="Cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+</nav>
+
+<section class="products" id="products">
+  <h2>Our Slippers Collection</h2>
+
+    <div class="product-grid">
+        <!-- PRODUCT 1 -->
+        <div class="card">
+            <img src="gatorclassic.png" alt="Slipper 1">
+            <div class="card-content">
+                <h3>Gator Classic</h3>
+                <p>Durable everyday slippers with all-day comfort.<br><b> $29.99</b></p>
+               <div>
+                <button onclick="buy()">Buy Now</button> 
+                <button onclick="cart()">Add to Cart</button>
+              </div>
+            </div>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="card">
+           <img src="swampflex.png" alt="Slipper 2">
+            <div class="card-content">
+                <h3>Swamp Flex</h3>
+                <p>Flexible sole with natural grip design.<br><b> $39.99</b></p><br>
+            <div>
+                <button onclick="buy()">Buy Now</button> 
+                <button onclick="cart()">Add to Cart</button>
+              </div>
+            </div>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="card">
+           <img src="riverwalk.png" alt="Slipper 3">
+            <div class="card-content">
+                <h3>River Walk</h3>
+                <p>Lightweight slippers for casual wear.<br><b> $24.99</b></p><br>
+               <div>
+                <button onclick="buy()">Buy Now</button> 
+                <button onclick="cart()">Add to Cart</button>
+              </div>
+            </div>
+        </div>
+        <!-- PRODUCT 4 -->
+<div class="card">
+    <img src="gatoredge.png" alt="Slipper 4">
+    <div class="card-content">
+        <h3>Gator Edge</h3>
+        <p>Rugged design with extra grip and comfort.<br><b> $35.99</b></p>
+       <div>
+                <button onclick="buy()">Buy Now</button> 
+                <button onclick="cart()">Add to Cart</button>
+              </div>
+    </div>
+</div>
+
+<!-- PRODUCT 5 -->
+<div class="card">
+    <img src="swampwalk.png" alt="Slipper 5">
+    <div class="card-content">
+        <h3>Swamp Walk</h3>
+        <p>Earth-tone slippers inspired by the wild.<br><b> $20.99</b></p>
+         <div>
+                <button onclick="buy()">Buy Now</button> 
+                <button onclick="cart()">Add to Cart</button>
+              </div>
+    </div>
+</div>
+
+<!-- PRODUCT 6 -->
+<div class="card">
+   <img src="alleiflex.png" alt="Slipper 6">
+    <div class="card-content">
+        <h3>Alléi  Flex</h3>
+        <p>Flexible sole for daily movement.<br><b> $53.99</b></p><br>
+       <div>
+                <button onclick="buy()">Buy Now</button> 
+                <button onclick="cart()">Add to Cart</button>
+              </div>
+    </div>
+</div>
+
+<!-- PRODUCT 7 -->
+<div class="card">
+   <img src="rivergrip.png" alt="Slipper 7">
+    <div class="card-content">
+        <h3>River Grip</h3>
+        <p>Anti-slip sole perfect for wet surfaces.<br><b> $30.99</b></p><br>
+       <div>
+                <button onclick="buy()">Buy Now</button> 
+                <button onclick="cart()">Add to Cart</button>
+              </div>
+    </div>
+</div>
+
+<!-- PRODUCT 8 -->
+<div class="card">
+   <img src="mosslide.png" alt="Slipper 8">
+    <div class="card-content">
+        <h3>Moss Slide</h3>
+        <p>Minimalist slide with swamp-green vibes.<br><b> $32.99</b></p>
+       <div>
+                <button onclick="buy()">Buy Now</button> 
+                <button onclick="cart()">Add to Cart</button>
+              </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<script>
+function buy() {
+    alert("Thank you for choosing Alligator 🝊! This is a demo button.");
+}
+function cart() {
+    alert("🛒 Cart is currently empty!This is a demo button.");
+}
+
+
+function searchProducts() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        let title = card.querySelector("h3").textContent.toLowerCase();
+        let description = card.querySelector("p").textContent.toLowerCase();
+
+        if (title.includes(input) || description.includes(input)) {
+            card.style.display = "flex";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+</script>
+<footer>
+    <p>© 2026 Alléi Slippers. All Rights Reserved.</p>
+</footer>
+</body>
+
+</html>
