@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alligator | Cart</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<nav class="icon-nav">
+  <input type="checkbox" id="menu-toggle" hidden>
+  <label for="menu-toggle" class="menu-toggle">
+    <i class="fa-solid fa-bars"></i>  
+  </label>
+  
+  <div class="menu">
+    <div class="menu_header">
+      <h2>Menu</h2>
+    </div>
+    <div class="menu_item">
+      <a href= "index.html" style="color:black;">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+    </div>
+    <div class="menu_item">
+    <a href= "shoppingcart.html" style="color:black;">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Cart</span>
+      </a>
+    </div>
+    <div class="menu_item">
+       <a href= "Account.html" style="color:black;">
+        <i class="fa-solid fa-user"></i>
+        <span>Account</span>
+      </a>
+    </div>
+<div class="menu_item">
+      <i class="fa-solid fa-circle-question"></i>
+      <span>Help</span>
+    </div>
+  </div>
+  </div>
+
+  <img src="logo.png" alt="Alli Logo" class="img">
+
+  <div class="search-bar-full">
+    <input type="text" placeholder="Search your slippers...">
+  </div>
+
+  <a href="index.html" title="Home">
+      <i class="fa-solid fa-house"></i>
+  </a>
+  <a href="Products.html" title="Products">
+      <i class="fa-solid fa-shoe-prints"></i>
+  </a>
+   <a href="shoppingcart.html" onclick="cart()" title="Cart">
+      <i class="fa-solid fa-cart-shopping"></i>
+  </a>
+</nav>
+
+
+<section class="cart-section">
+    <h2>Your Shopping Cart 🛒</h2>
+
+    <div class="cart-container">
+
+        <!-- ITEM 1 -->
+        <div class="cart-item">
+            <img src="gatorclassic.png" alt="Gator Classic" style="margin-right:50px;">
+            <div class="cart-details">
+                <h3>Gator Classic</h3>
+                <p>Price: $29.99</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+            </div>
+            <button class="remove-btn">Remove</button>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="cart-item">
+            <img src="riverwalk.png" alt="River Walk" style="margin-right:50px;">
+            <div class="cart-details">
+                <h3>River Walk</h3>
+                <p>Price: $24.99</p>
+                <div class="quantity">
+                    <button>-</button>
+                    <span>2</span>
+                    <button>+</button>
+                </div>
+            </div>
+            <button class="remove-btn">Remove</button>
+        </div>
+
+    </div>
+
+    <div class="cart-summary">
+        <h3>Total: $79.97</h3>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+</section>
+
+<footer>
+  <p>© 2026 Alléi Slippers. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
